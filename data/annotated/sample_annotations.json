@@ -1,0 +1,27 @@
+[
+  {
+    "sentence": "Book a flight from Chennai to Delhi",
+    "intent": "book_flight",
+    "entities": "Chennai->GPE,Delhi->GPE"
+  },
+  {
+    "sentence": "Cancel my train ticket",
+    "intent": "cancel_flight",
+    "entities": ""
+  },
+  {
+    "sentence": "Order two burgers from Domino's",
+    "intent": "order_food",
+    "entities": "Domino's->ORG"
+  },
+  {
+    "sentence": "What's my account balance?",
+    "intent": "check_balance",
+    "entities": ""
+  },
+  {
+    "sentence": "Book appointment with dentist tomorrow",
+    "intent": "book_appointment",
+    "entities": "tomorrow->DATE"
+  }
+]

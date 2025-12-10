@@ -1,0 +1,202 @@
+[
+  {
+    "sentence": "1. Book a flight from Chennai to Delhi tomorrow morning.",
+    "intent": "book_flight",
+    "entities": "1->CARDINAL, Chennai->GPE, Delhi->GPE, tomorrow->DATE, morning->TIME"
+  },
+  {
+    "sentence": "2. Show me the cheapest flights to Mumbai this weekend.",
+    "intent": "book_flight",
+    "entities": "2->CARDINAL, Mumbai->GPE, this weekend->DATE"
+  },
+  {
+    "sentence": "3. Cancel my ticket to Hyderabad immediately.",
+    "intent": "cancel_flight",
+    "entities": "3->CARDINAL, Hyderabad->ORG"
+  },
+  {
+    "sentence": "4. Reschedule my flight to Bangalore for next Monday.",
+    "intent": "cancel_flight",
+    "entities": "4->CARDINAL, Bangalore->PERSON, next Monday->DATE"
+  },
+  {
+    "sentence": "5. Find direct flights from Pune to Kolkata.",
+    "intent": "book_flight",
+    "entities": "5->CARDINAL, Pune->LOC, Kolkata->GPE"
+  },
+  {
+    "sentence": "6. Check flight status for Indigo 6E 543.",
+    "intent": "check_balance",
+    "entities": "6->CARDINAL, Indigo->ORG, 6E 543->CARDINAL"
+  },
+  {
+    "sentence": "7. Show international flights to Singapore under 10k.",
+    "intent": "book_flight",
+    "entities": "7->CARDINAL, Singapore->GPE, under 10k->DATE"
+  },
+  {
+    "sentence": "8. Book a business class ticket to Dubai.",
+    "intent": "book_flight",
+    "entities": "8->CARDINAL, Dubai->GPE"
+  },
+  {
+    "sentence": "9. Add extra baggage to my Delhi flight.",
+    "intent": "cancel_flight",
+    "entities": "9->CARDINAL, Delhi->GPE"
+  },
+  {
+    "sentence": "10. Show flights from Coimbatore to Chennai tonight.",
+    "intent": "book_flight",
+    "entities": "10->CARDINAL, Coimbatore->ORG, Chennai->ORG, tonight->TIME"
+  },
+  {
+    "sentence": "11. Find refundable flights to Jaipur.",
+    "intent": "book_flight",
+    "entities": "11->CARDINAL, Jaipur->GPE"
+  },
+  {
+    "sentence": "12. Show me the best flight deals for Europe.",
+    "intent": "book_flight",
+    "entities": "12->CARDINAL, Europe->LOC"
+  },
+  {
+    "sentence": "13. Book a round-trip ticket to Goa.",
+    "intent": "book_flight",
+    "entities": "13->CARDINAL, Goa->PERSON"
+  },
+  {
+    "sentence": "14. Find early morning flights to Ahmedabad.",
+    "intent": "book_flight",
+    "entities": "14->CARDINAL, Ahmedabad->GPE"
+  },
+  {
+    "sentence": "15. Cancel my return ticket from Kochi.",
+    "intent": "cancel_flight",
+    "entities": "15->CARDINAL, Kochi->LOC"
+  },
+  {
+    "sentence": "16. Book window seat for my Bangalore flight.",
+    "intent": "book_flight",
+    "entities": "16->CARDINAL, Bangalore->PERSON"
+  },
+  {
+    "sentence": "17. Show flights departing after 6 PM.",
+    "intent": "book_flight",
+    "entities": "17->CARDINAL, 6 PM->TIME"
+  },
+  {
+    "sentence": "18. Check PNR status for my Air India ticket.",
+    "intent": "check_balance",
+    "entities": "18->CARDINAL, Air India->ORG"
+  },
+  {
+    "sentence": "19. Find non-stop flights to Trivandrum.",
+    "intent": "book_flight",
+    "entities": "19->CARDINAL, Trivandrum->GPE"
+  },
+  {
+    "sentence": "20. Book a flight from Hyderabad to Vizag next Friday.",
+    "intent": "book_flight",
+    "entities": "20->CARDINAL, Hyderabad->ORG, Vizag->PERSON, next Friday->DATE"
+  },
+  {
+    "sentence": "21. Show flights available under 5000.",
+    "intent": "book_flight",
+    "entities": "21->CARDINAL"
+  },
+  {
+    "sentence": "22. Find flights with free meals included.",
+    "intent": "book_flight",
+    "entities": "22->CARDINAL"
+  },
+  {
+    "sentence": "23. Book premium economy seats to Delhi.",
+    "intent": "book_flight",
+    "entities": "23->CARDINAL, Delhi->GPE"
+  },
+  {
+    "sentence": "24. Modify my ticket date to next Thursday.",
+    "intent": "cancel_flight",
+    "entities": "24->CARDINAL, next Thursday->DATE"
+  },
+  {
+    "sentence": "25. Send me boarding time reminders.",
+    "intent": "book_flight",
+    "entities": "25->CARDINAL"
+  },
+  {
+    "sentence": "26. Find last-minute flights to Mumbai.",
+    "intent": "book_flight",
+    "entities": "26->CARDINAL, Mumbai->GPE"
+  },
+  {
+    "sentence": "27. Show me the earliest flight to Chennai.",
+    "intent": "book_flight",
+    "entities": "27->CARDINAL, Chennai->ORG"
+  },
+  {
+    "sentence": "28. Upgrade my seat to business class.",
+    "intent": "book_flight",
+    "entities": "28->CARDINAL"
+  },
+  {
+    "sentence": "29. Cancel all my flight bookings for this month.",
+    "intent": "cancel_flight",
+    "entities": "29->CARDINAL, this month->DATE"
+  },
+  {
+    "sentence": "30. Show flights with student discount.",
+    "intent": "book_flight",
+    "entities": "30->CARDINAL"
+  },
+  {
+    "sentence": "31. Check baggage allowance for Emirates.",
+    "intent": "check_balance",
+    "entities": "31->CARDINAL, Emirates->GPE"
+  },
+  {
+    "sentence": "32. Book a late-night flight to Kolkata.",
+    "intent": "book_flight",
+    "entities": "32->CARDINAL, late-night->TIME, Kolkata->GPE"
+  },
+  {
+    "sentence": "33. Show connecting flights from Delhi to New York.",
+    "intent": "book_flight",
+    "entities": "33->CARDINAL, Delhi->GPE, New York->GPE"
+  },
+  {
+    "sentence": "34. Find flights with shortest layover.",
+    "intent": "book_flight",
+    "entities": "34->CARDINAL"
+  },
+  {
+    "sentence": "35. Book a flight using airline reward points.",
+    "intent": "book_flight",
+    "entities": "35->CARDINAL"
+  },
+  {
+    "sentence": "36. Show me upcoming flight schedules.",
+    "intent": "check_balance",
+    "entities": "36->CARDINAL"
+  },
+  {
+    "sentence": "37. Check if my flight is delayed.",
+    "intent": "cancel_flight",
+    "entities": "37->CARDINAL"
+  },
+  {
+    "sentence": "38. Find flights with free cancellation.",
+    "intent": "book_flight",
+    "entities": "38->CARDINAL"
+  },
+  {
+    "sentence": "39. Book a flight for a group of four to Goa.",
+    "intent": "book_flight",
+    "entities": "39->CARDINAL, four->CARDINAL"
+  },
+  {
+    "sentence": "40. Show flights to Pune on 25th March.",
+    "intent": "book_flight",
+    "entities": "40->CARDINAL, Pune->LOC, March->DATE"
+  }
+]

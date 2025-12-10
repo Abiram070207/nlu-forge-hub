@@ -1,0 +1,52 @@
+[
+  {
+    "sentence": "1. Book a flight from Chennai to Delhi tomorrow morning.",
+    "intent": "book_flight",
+    "entities": "1->CARDINAL, Chennai->GPE, Delhi->GPE, tomorrow->DATE, morning->TIME"
+  },
+  {
+    "sentence": "2. Show me the cheapest flights to Mumbai this weekend.",
+    "intent": "book_flight",
+    "entities": "2->CARDINAL, Mumbai->GPE, this weekend->DATE"
+  },
+  {
+    "sentence": "3. Cancel my ticket to Hyderabad immediately.",
+    "intent": "cancel_flight",
+    "entities": "3->CARDINAL, Hyderabad->ORG"
+  },
+  {
+    "sentence": "4. Reschedule my flight to Bangalore for next Monday.",
+    "intent": "cancel_flight",
+    "entities": "4->CARDINAL, Bangalore->PERSON, next Monday->DATE"
+  },
+  {
+    "sentence": "5. Find direct flights from Pune to Kolkata.",
+    "intent": "book_flight",
+    "entities": "5->CARDINAL, Pune->LOC, Kolkata->GPE"
+  },
+  {
+    "sentence": "6. Check flight status for Indigo 6E 543.",
+    "intent": "check_balance",
+    "entities": "6->CARDINAL, Indigo->ORG, 6E 543->CARDINAL"
+  },
+  {
+    "sentence": "7. Show international flights to Singapore under 10k.",
+    "intent": "book_flight",
+    "entities": "7->CARDINAL, Singapore->GPE, under 10k->DATE"
+  },
+  {
+    "sentence": "8. Book a business class ticket to Dubai.",
+    "intent": "book_flight",
+    "entities": "8->CARDINAL, Dubai->GPE"
+  },
+  {
+    "sentence": "9. Add extra baggage to my Delhi flight.",
+    "intent": "cancel_flight",
+    "entities": "9->CARDINAL, Delhi->GPE"
+  },
+  {
+    "sentence": "10. Show flights from Coimbatore to Chennai tonight.",
+    "intent": "book_flight",
+    "entities": "10->CARDINAL, Coimbatore->ORG, Chennai->ORG, tonight->TIME"
+  }
+]
