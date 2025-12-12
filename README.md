@@ -199,7 +199,7 @@ See the LICENSE file for details.
 ## **👨‍💻 Author**
 
 Abiram
-NLU / ML Developer
+(NLU / ML Developer)
 
 ## **⭐ If you like this project**
 
