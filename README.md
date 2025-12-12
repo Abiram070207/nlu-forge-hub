@@ -1,4 +1,4 @@
-# 🔥 NLU Forge Hub  
+# 🔥 NLU Model Trainer and Evaluator for Chatbots
 ### A Complete Intent Classification & Entity Extraction System (Built with Streamlit + spaCy)
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
