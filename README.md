@@ -114,29 +114,42 @@ Shows:
 ## 📂 **Project Structure**
 
 INFOSYS_PROJECT/
-│── app.py
-│── requirements.txt
-│── LICENSE
-│── README.md
+│── app.py                         # Main Streamlit entry point
+│── requirements.txt               # All required Python packages
+│── README.md                      # Documentation
+│── LICENSE                        # MIT License
 │
-├── pages/
-│ ├── 1_Login.py
-│ ├── 2_Workspace.py
-│ ├── 3_UploadDataset.py
-│ ├── 4_Annotate.py
-│ ├── 5_TrainModel.py
-│ ├── 6_TestEvaluate.py
-│ ├── 7_ActiveLearning.py
-│ ├── 0_Admin_Dashboard.py
+├── pages/                         # Streamlit multipage interface
+│   │
+│   ├── 1_Login.py                 # User authentication
+│   ├── 2_Workspace.py             # Workspace creation & selection
+│   ├── 3_UploadDataset.py         # Dataset upload (CSV/TXT/JSON)
+│   ├── 4_Annotate.py              # Annotation (intent + entities)
+│   ├── 5_TrainModel.py            # Train spaCy textcat model
+│   ├── 6_TestEvaluate.py          # Evaluate model (report + matrix)
+│   ├── 7_ActiveLearning.py        # Low-confidence sample mining
+│   ├── 0_Admin_Dashboard.py       # Admin control dashboard
 │
-├── backend/
-│ ├── trainer.py
-│ ├── evaluator.py
-│ ├── spacy_intent_model.py
-│ ├── utils.py
+├── backend/                       # All backend logic (Python modules)
+│   │
+│   ├── trainer.py                 # Train spaCy intent classifier
+│   ├── evaluator.py               # Evaluate model performance
+│   ├── spacy_intent_model.py      # Load / Predict intents using spaCy
+│   ├── utils.py                   # Optional helper utilities
 │
-└── models/
-└── intent_model/ (generated after training)
+├── models/                        # Stores trained models
+│   └── intent_model/              # Generated after training (spaCy)
+│
+├── data/                          # All user data stored here
+│   └── workspaces/
+│       └── USERNAME/              # Each user's directory
+│           └── WORKSPACE_NAME/    # Workspace directory
+│               │── dataset.csv    # Uploaded dataset
+│               │── annotations.json # User-annotated data
+│               └── any other outputs
+│
+└── assets/                        # Optional (images, icons, diagrams)
+    └── architecture.png
 
 
 ---
