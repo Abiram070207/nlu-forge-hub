@@ -1,13 +1,193 @@
-NLU_Forge - Full Project (Modular)
----------------------------------
-This project contains a modular Streamlit frontend and backend modules using spaCy for both NER and Intent Classification (TextCategorizer).
-Folders:
-  - pages/: Streamlit multipage files
-  - backend/: spaCy training, evaluation, utils
-  - models/intent_model: saved spaCy model will be stored here after training
-  - data/: uploaded datasets and annotations
+# 🔥 NLU Forge Hub  
+### A Complete Intent Classification & Entity Extraction System (Built with Streamlit + spaCy)
 
-Quick start:
-  - pip install -r requirements.txt
-  - python -m spacy download en_core_web_sm
-  - python -m streamlit run app.py
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.10%2B-yellow)
+![Streamlit](https://img.shields.io/badge/Framework-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![spaCy](https://img.shields.io/badge/NLP-spaCy-09A3D5?logo=spacy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/ML-scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/Abiram070207/nlu-forge-hub)
+![Last Commit](https://img.shields.io/github/last-commit/Abiram070207/nlu-forge-hub)
+
+---
+
+## 📌 **Project Overview**
+
+NLU Forge Hub is a modular Natural Language Understanding (NLU) system designed for:
+- **Intent Classification**
+- **Entity Recognition**
+- **Dataset Annotation**
+- **Model Training**
+- **Active Learning**
+- **Admin Dashboard Monitoring**
+
+The platform provides a **complete workflow** starting from dataset upload → annotation → spaCy model training → evaluation → active learning loop → admin analytics.
+
+This project demonstrates a production-style NLU pipeline suitable for conversational agents, chatbots, customer service AI, and task automation systems.
+
+---
+
+## 🚀 **Key Features**
+
+### ✅ **1. User Authentication**
+Secure login system with user workspace isolation.
+
+### ✅ **2. Workspace Management**
+Each user can create multiple workspaces for different NLU projects.
+
+### ✅ **3. Dataset Upload Module**
+Supports:
+- `.csv`
+- `.json`
+- `.txt`
+
+### ✅ **4. Annotation Tool**
+Using spaCy NER + ML intent prediction with editable corrections:
+- Shows predicted intent
+- Extracts entities automatically
+- Saves annotations in JSON format
+
+### ✅ **5. spaCy Model Training**
+Includes:
+- Training–test split
+- Loss tracking
+- Multiple epochs
+- Model saved to `/models/intent_model`
+
+### ✅ **6. Model Evaluation**
+Generates:
+- Classification Report
+- Accuracy / Precision / Recall / F1
+- Confusion Matrix (saved as image)
+
+### ✅ **7. Active Learning**
+Filters low-confidence samples (<50–60%) for re-annotation.
+
+### ✅ **8. Admin Dashboard**
+Shows:
+- Workspace usage
+- Dataset stats
+- Annotation completeness
+- Model status
+- Buttons to retrain & evaluate model
+
+---
+
+## 🏗 **System Architecture**
+
+               ┌────────────────────────────┐
+               │          Frontend           │
+               │      Streamlit Pages        │
+               ├────────────────────────────┤
+               │ Login / Workspaces          │
+               │ Dataset Upload              │
+               │ Annotator (Model + NER)     │
+               │ Train spaCy Model           │
+               │ Evaluate Model              │
+               │ Active Learning             │
+               │ Admin Dashboard             │
+               └───────────────┬────────────┘
+                               │
+                               ▼
+               ┌────────────────────────────┐
+               │          Backend            │
+               │     Python Modules          │
+               ├────────────────────────────┤
+               │ trainer.py                  │
+               │ evaluator.py                │
+               │ spacy_intent_model.py       │
+               │ File-based DB (JSON/CSV)    │
+               └───────────────┬────────────┘
+                               │
+                               ▼
+               ┌────────────────────────────┐
+               │      Data & Models         │
+               ├────────────────────────────┤
+               │ data/workspaces            │
+               │ annotations.json           │
+               │ trained spaCy model        │
+               └────────────────────────────┘
+
+---
+
+## 📂 **Project Structure**
+
+INFOSYS_PROJECT/
+│── app.py
+│── requirements.txt
+│── LICENSE
+│── README.md
+│
+├── pages/
+│ ├── 1_Login.py
+│ ├── 2_Workspace.py
+│ ├── 3_UploadDataset.py
+│ ├── 4_Annotate.py
+│ ├── 5_TrainModel.py
+│ ├── 6_TestEvaluate.py
+│ ├── 7_ActiveLearning.py
+│ ├── 0_Admin_Dashboard.py
+│
+├── backend/
+│ ├── trainer.py
+│ ├── evaluator.py
+│ ├── spacy_intent_model.py
+│ ├── utils.py
+│
+└── models/
+└── intent_model/ (generated after training)
+
+
+---
+
+## ⚙️ **Installation**
+
+### 1️⃣ Create environment
+
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+python -m streamlit run app.py
+py -m streamlit run app.py
+
+
+## **Modular Training workflow**
+1. Upload a dataset
+
+2. Annotate intents + entities
+
+3. Go to Train spaCy Model
+
+4. Choose epochs
+
+5. Train model → saved into /models/intent_model
+
+6. Evaluate model under Test & Evaluate
+
+7. Low-confidence predictions appear in Active Learning
+
+## **📦 Datasets Included**
+
+Travel dataset (40 samples)
+
+Food ordering dataset (40 samples)
+
+Economics / Banking dataset (40 samples)
+
+You can extend your own datasets via the Upload module.
+
+## **📜 License**
+
+This project is licensed under the MIT License.
+See the LICENSE file for details.
+
+## **👨‍💻 Author**
+
+Abiram
+NLU / ML Developer
+
+## **⭐ If you like this project**
+
+Don’t forget to star the repo ⭐
